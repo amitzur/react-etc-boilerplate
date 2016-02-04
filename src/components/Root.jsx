@@ -1,4 +1,5 @@
 import React from 'react';
+import style from '../stylesheets/root.scss';
 
 export default React.createClass({
 
@@ -16,7 +17,7 @@ export default React.createClass({
 
 	render: function() {
 		return (
-			<div>
+			<div className={style.root}>
 				Hello, 
 				<span className="something">{this.state.audience}</span>
 			</div>

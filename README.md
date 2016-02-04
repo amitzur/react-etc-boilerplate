@@ -32,6 +32,11 @@ Adding react babel tranformation, react HMR, initial JSX file and components dir
 
 A good inspiration came from [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate)
 
+## CSS Modules
+Ability to require a specific style into component. More info [here](https://github.com/css-modules/css-modules).
+
+For including source maps I took [this example](https://github.com/webpack/css-loader/issues/81).
+
 ## React Router
 Not sure how this works
 

@@ -13,8 +13,8 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.jsx?$/, loaders: ['babel'], exclude: /node_modules/ },
-            { test: /\.css$/,  loader: "style!css" },
-            { test: /\.scss/,  loaders: ["style", "css", "sass"] },
+            { test: /\.css$/,  loader: "style!css?modules&sourceMap" },
+            { test: /\.scss/,  loaders: ["style", "css?modules&sourceMap", "sass?sourceMap"] },
             { test: /\.woff(2)?(\?.+)?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
             { test: /\.(ttf|eot|svg)(\?.+)?$/, loader: "file-loader" }
         ]
