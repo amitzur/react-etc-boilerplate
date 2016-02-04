@@ -30,6 +30,8 @@ Next there should be a production configuration.
 ## React
 Adding react babel tranformation, react HMR, initial JSX file and components directory.
 
+A good inspiration came from [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate)
+
 ## React Router
 Not sure how this works
 
