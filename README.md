@@ -24,8 +24,10 @@ Then, go to `http://localhost:8080`
 
 ## Webpack
 A great tutorial is at (http://www.pro-react.com/materials/appendixA/)[http://www.pro-react.com/materials/appendixA/]
+
 Naturally this should begin with the css loaders, source maps, HMR, ES6, and npm scripts.
-Next there should be a production configuration.
+
+Production config: webpack.production.config.js with ExtractTextPlugin (I spent an hour trying to make it work with Sass and only [this answer](http://stackoverflow.com/questions/32211231/webpack-sass-loader-no-output-css-file) saved me).
 
 ## React
 Adding react babel tranformation, react HMR, initial JSX file and components directory.
