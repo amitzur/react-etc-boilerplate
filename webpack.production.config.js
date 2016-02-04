@@ -23,7 +23,7 @@ module.exports = {
     },
     output: {
         path: 'dist',
-        filename: '[name].js'
+        filename: '[name]-[hash].js'
     },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
@@ -33,6 +33,6 @@ module.exports = {
             template: __dirname + "/src/index.tmpl.html"
         }),
         new webpack.optimize.UglifyJsPlugin(),
-        new ExtractTextPlugin("[name].css")
+        new ExtractTextPlugin("[name]-[hash].css")
     ]
 };
