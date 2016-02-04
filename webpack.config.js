@@ -31,6 +31,13 @@ module.exports = {
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
-        new HtmlWebpackPlugin()
-    ]
+        new HtmlWebpackPlugin({
+            template: __dirname + "/src/index.tmpl.html"
+        })
+    ],
+    devServer: {
+        colors: true,
+        inline: true,
+        hot: true
+    }
 };
