@@ -1,4 +1,4 @@
 import append from './another-module';
-require("./stylesheets/main.scss");
+import './stylesheets/main.scss';
 
 append("world");
