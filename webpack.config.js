@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
 
 module.exports = {
-    devtool: 'source-map',
+    devtool: 'cheap-module-eval-source-map',
     entry: {
         bundle: [
             './src/index.js'
@@ -12,7 +12,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.js$/, loaders: ['babel'], exclude: /node_modules/ },
+            { test: /\.jsx?$/, loaders: ['babel'], exclude: /node_modules/ },
             { test: /\.css$/,  loader: "style!css" },
             { test: /\.scss/,  loaders: ["style", "css", "sass"] },
             { test: /\.woff(2)?(\?.+)?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
