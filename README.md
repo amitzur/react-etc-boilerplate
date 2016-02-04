@@ -7,6 +7,21 @@ The intention is to progress this boilerplate at the same pace of my learning cu
 - react-router
 - flux (probably redux)
 
+## Usage
+First, clone this repo.
+
+To build into the `dist` folder
+```shell
+$ npm run build
+```
+
+To run the webpack dev server
+```shell
+$ npm start
+```
+
+Then, go to `http://localhost:8080`
+
 ## Webpack
 A great tutorial is at (http://www.pro-react.com/materials/appendixA/)[http://www.pro-react.com/materials/appendixA/]
 Naturally this should begin with the css loaders, source maps, HMR, ES6, and npm scripts.
